@@ -1,100 +1,94 @@
 <!DOCTYPE html>
-<html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="renderer" content="webkit"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
-  <meta http-equiv="Cache-Control" content="no-siteapp"/>
-  <meta name="theme-color" content="#ffffff">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Lumoni·光语 - Larvend Ahympia</title>
+  <meta name="renderer" content="webkit" />
+  <meta name="description" itemprop="description" content="Larvend Ahympia官方网站，了解与调查Larvend世界，从这里开始。" />
+  <meta name="keywords" content="Larvend,Larvend Ahympia,Ahympia,Larvend·彼方,Lumoni,Lumoni·光语,Larvend调查局" />
+  <meta itemprop="name" content="Larvend Ahympia官网">
+  <meta itemprop="image" content="../../icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="../../css/mdui.min.css" />
+  <link rel="stylesheet" href="../../css/docs.css" />
   <link rel="shortcut icon" href="../../favicon.ico" />
-  <link rel="bookmark" href="../../favicon.ico" />
-  <link rel="stylesheet" href="../../css/mdui.min.css"/>
-  <link rel="stylesheet" href="../../css/vendor.css"/>
-  <link rel="stylesheet" href="../../css/app.css"/>
-  <!--
-  <link rel="stylesheet" href="/static/home/default/dist/css/vendor.57f492fe4d88c7538803b152fe84a7ca.css"/>
-  <link rel="stylesheet" href="/static/home/default/dist/css/app.0ffb3331a8eb5d052581c4b8cf5e1a70.css"/>
-  -->
 </head>
-<body class="mdui-theme-primary-indigo mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-accent-pink mdui-loaded">
-  <header class="mdui-appbar mdui-appbar-fixed">
-  <div class="mdui-toolbar mdui-color-theme">
-    <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#left-drawer'}"><i class="mdui-icon material-icons">menu</i></span>
-    <a href="../../" class="mdui-typo-headline mdui-hidden-xs">Larvend Ahympia</a>
-    <div class="mdui-toolbar-spacer"></div>
+<body class="mdui-theme-primary-indigo mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-accent-pink">
+  <div class="mdui-appbar mdui-appbar-fixed">
+    <div class="mdui-toolbar mdui-color-indigo">
+      <a class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#drawer'}">
+      <i class="mdui-icon material-icons">&#xe5d2;</i></a>
+      <span class="mdui-typo-title">Larvend Ahympia</span>
+      <div class="mdui-toolbar-spacer"></div>
+    </div>
   </div>
-  </header>
-  <div class="mc-drawer mdui-drawer mdui-drawer-open" id="left-drawer">
-    <div class="mdui-list">
-      <a class="mdui-list-item mdui-ripple" href="../../">
-        <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
-        <div class="mdui-list-item-content">首页</div>
-      </a>
-      <div class="mdui-collapse" mdui-collapse>
-        <div class="mdui-collapse-item mdui-collapse-item-open">
-          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-            <a class="mdui-list-item mdui-ripple" href="javascript:;">
-              <i class="mdui-list-item-icon mdui-icon material-icons">book</i>
+
+  <div class="mdui-fab-wrapper" mdui-fab="{trigger: 'hover'}">
+    <a href="#top" class="mdui-fab mdui-ripple mdui-color-pink mdui-fab-fixed">
+      <i class="mdui-icon material-icons">&#xe5d8;</i></a>
+  </div>
+
+  <div class="mdui-drawer" id="drawer">
+      <ul class="mdui-list" mdui-collapse="{accordion: true}" style="max-width: 360px;">
+          <a class="mdui-list-item mdui-ripple" href="../../">
+            <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-red">home</i>
+            <div class="mdui-list-item-content">首页</div>
+          </a>
+          <div class="mdui-collapse-item mdui-collapse-item-open">
+            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+              <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-purple">book</i>
               <div class="mdui-list-item-content">项目列表</div>
               <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
-            </a>
+            </div>
+            <div class="mdui-collapse-item-body mdui-list">
+              <a href="../larvend1" class="mdui-list-item mdui-ripple">Larvend·彼方</a>
+              <a class="mdui-list-item mdui-ripple mdui-text-color-theme mdui-list-item-active">Lumoni·光语</a>
+            </div>
           </div>
-          <div class="mdui-collapse-item-body mdui-list" style="">
-            <a href="../larvend1" class="mdui-list-item mdui-ripple">Larvend·彼方</a>
-            <a href="#" class="mdui-list-item mdui-ripple mdui-text-color-theme mdui-list-item-active">Lumoni·光语</a>
-          </div>
-        </div>
-      </div>
-      <a class="mdui-list-item mdui-ripple" href="../about">
-        <i class="mdui-list-item-icon mdui-icon material-icons">layers</i>
-        <div class="mdui-list-item-content">关于我们</div>
-      </a>
-      <a class="mdui-list-item mdui-ripple" href="../join">
-        <i class="mdui-list-item-icon mdui-icon material-icons">forum</i>
-        <div class="mdui-list-item-content">加入我们</div>
-      </a>
-    </div>
-    <div class="copyright"></div>
+          <a class="mdui-list-item mdui-ripple" href="../about">
+            <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-green">layers</i>
+            <div class="mdui-list-item-content">关于我们</div>
+          </a>
+          <a class="mdui-list-item mdui-ripple" href="../join">
+            <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue">forum</i>
+            <div class="mdui-list-item-content">加入我们</div>
+          </a>
+      </ul>
   </div>
-
+  
   <div class="mdui-container doc-container doc-no-cover">
     <h1 class="doc-title mdui-text-color-theme">Lumoni·光语</h1>
-    <hr>
+    <hr/>
+    <br/>
+    <div class="doc-intro mdui-typo">
+      <blockquote>
+        <p>当星辰飞降，化为海洋的时候，这个世界的新生即将来临。</p>
+        <footer>——《星轨观想录·序曲》</footer>
+      </blockquote>
+    </div>
     <div class="doc-chapter">
       <div class="mdui-typo">
-        <blockquote>当星辰飞降，化为海洋的时候，这个世界的新生即将来临。
-        <footer>——《星轨观想录·序曲》</footer></blockquote>
-
-Larvend世界的古老语言，曾伴随着这个世界走过了太虚与荒芜。
-
-时光流转间，光语悄然淡去，不再有人能够读懂万古之上的故事。
-
-由于Larvend·彼方研究需要，大量人手被抽调，该课题正处于挂起状态。
-
-我们欢迎对于语言学有研究的人士加入该课题的研究。
-
-并且，由于目前保留下有关光语的参考资料较少，我们能够提供的帮助并不多。
-
-目前已经确定了十余个光语词汇的意义，初步推断光语属于黏着语。
-
-若想获得进一步的信息，请与我们联系。
+        <p>Larvend世界的古老语言，曾伴随着这个世界走过了太虚与荒芜。</p>
+        <p>时光流转间，光语悄然淡去，不再有人能够读懂万古之上的故事。</p>
+        <p>由于Larvend·彼方研究需要，大量人手被抽调，该课题正处于挂起状态。</p>
+        <p>我们欢迎对于语言学有研究的人士加入该课题的研究。</p>
+        <p>并且，由于目前保留下有关光语的参考资料较少，我们能够提供的帮助并不多。</p>
+        <p>目前已经确定了十余个光语词汇的意义，初步推断光语属于黏着语。</p>
+        <p>若想获得进一步的信息，请与我们联系。</p>
       </div>
     </div>
   </div>
   <div class="doc-footer-nav mdui-color-theme">
-    <div class="mdui-container">
-      <div class="footer-copyright">Copyright © 2019 - 2020  Larvend Ahympia. Theme by MDUI.</div>
+  <div class="mdui-container">
+    <div class="doc-footer-nav-text">
+          <span class="doc-footer-nav-direction">Theme by MDUI.</span>
+          <div class="doc-footer-nav-chapter">Copyright © 2019 - 2020  Larvend Ahympia.</div>
     </div>
   </div>
-</body>
+</div>
 
-<script>
-  window.G_API = '/api';
-  window.G_ROOT = '';
-  window.G_USER = false;
-</script>
 <script src="../../js/mdui.min.js"></script>
-<script src="../../js/vendor.js"></script>
-<script src="../../js/app.js"></script>
+<script src="../../js/smooth-scroll.min.js"></script>
+<script>var scroll = new SmoothScroll("a[href*='#']");</script>
+
+</body>

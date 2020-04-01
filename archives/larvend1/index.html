@@ -1,133 +1,113 @@
 <!DOCTYPE html>
-<html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="renderer" content="webkit"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
-  <meta http-equiv="Cache-Control" content="no-siteapp"/>
-  <meta name="theme-color" content="#ffffff">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Larvend·彼方 - Larvend Ahympia</title>
+  <meta name="renderer" content="webkit" />
+  <meta name="description" itemprop="description" content="Larvend Ahympia官方网站，了解与调查Larvend世界，从这里开始。" />
+  <meta name="keywords" content="Larvend,Larvend Ahympia,Ahympia,Larvend·彼方,Lumoni,Lumoni·光语,Larvend调查局" />
+  <meta itemprop="name" content="Larvend Ahympia官网">
+  <meta itemprop="image" content="../../icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="../../css/mdui.min.css" />
+  <link rel="stylesheet" href="../../css/docs.css" />
   <link rel="shortcut icon" href="../../favicon.ico" />
-  <link rel="bookmark" href="../../favicon.ico" />
-  <link rel="stylesheet" href="../../css/mdui.min.css"/>
-  <link rel="stylesheet" href="../../css/vendor.css"/>
-  <link rel="stylesheet" href="../../css/app.css"/>
-  <!--
-  <link rel="stylesheet" href="/static/home/default/dist/css/vendor.57f492fe4d88c7538803b152fe84a7ca.css"/>
-  <link rel="stylesheet" href="/static/home/default/dist/css/app.0ffb3331a8eb5d052581c4b8cf5e1a70.css"/>
-  -->
 </head>
-<body class="mdui-theme-primary-indigo mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-accent-pink mdui-loaded">
-  <header class="mdui-appbar mdui-appbar-fixed">
-  <div class="mdui-toolbar mdui-color-theme">
-    <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#left-drawer'}"><i class="mdui-icon material-icons">menu</i></span>
-    <a href="../../" class="mdui-typo-headline mdui-hidden-xs">Larvend Ahympia</a>
-    <div class="mdui-toolbar-spacer"></div>
+<body class="mdui-theme-primary-indigo mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-accent-pink">
+  <div class="mdui-appbar mdui-appbar-fixed">
+    <div class="mdui-toolbar mdui-color-indigo">
+      <a class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#drawer'}">
+      <i class="mdui-icon material-icons">&#xe5d2;</i></a>
+      <span class="mdui-typo-title">Larvend Ahympia</span>
+      <div class="mdui-toolbar-spacer"></div>
+    </div>
   </div>
-  </header>
-  <div class="mc-drawer mdui-drawer mdui-drawer-open" id="left-drawer">
-    <div class="mdui-list">
-      <a class="mdui-list-item mdui-ripple" href="../../">
-        <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
-        <div class="mdui-list-item-content">首页</div>
-      </a>
-      <div class="mdui-collapse" mdui-collapse>
-        <div class="mdui-collapse-item mdui-collapse-item-open">
-          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-            <a class="mdui-list-item mdui-ripple" href="javascript:;">
-              <i class="mdui-list-item-icon mdui-icon material-icons">book</i>
+
+  <div class="mdui-fab-wrapper" mdui-fab="{trigger: 'hover'}">
+    <a href="#top" class="mdui-fab mdui-ripple mdui-color-pink mdui-fab-fixed">
+      <i class="mdui-icon material-icons">&#xe5d8;</i></a>
+  </div>
+
+  <div class="mdui-drawer" id="drawer">
+      <ul class="mdui-list" mdui-collapse="{accordion: true}" style="max-width: 360px;">
+          <a class="mdui-list-item mdui-ripple" href="../../">
+            <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-red">home</i>
+            <div class="mdui-list-item-content">首页</div>
+          </a>
+          <div class="mdui-collapse-item mdui-collapse-item-open">
+            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+              <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-purple">book</i>
               <div class="mdui-list-item-content">项目列表</div>
               <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
-            </a>
+            </div>
+            <div class="mdui-collapse-item-body mdui-list">
+              <a class="mdui-list-item mdui-ripple mdui-text-color-theme mdui-list-item-active">Larvend·彼方</a>
+              <a href="../lumoni" class="mdui-list-item mdui-ripple ">Lumoni·光语</a>
+            </div>
           </div>
-          <div class="mdui-collapse-item-body mdui-list" style="">
-            <a href="#" class="mdui-list-item mdui-ripple mdui-text-color-theme mdui-list-item-active">Larvend·彼方</a>
-            <a href="../lumoni" class="mdui-list-item mdui-ripple ">Lumoni·光语</a>
-          </div>
-        </div>
-      </div>
-      <a class="mdui-list-item mdui-ripple" href="../about">
-        <i class="mdui-list-item-icon mdui-icon material-icons">layers</i>
-        <div class="mdui-list-item-content">关于我们</div>
-      </a>
-      <a class="mdui-list-item mdui-ripple" href="../join">
-        <i class="mdui-list-item-icon mdui-icon material-icons">forum</i>
-        <div class="mdui-list-item-content">加入我们</div>
-      </a>
-    </div>
-    <div class="copyright"></div>
+          <a class="mdui-list-item mdui-ripple" href="../about">
+            <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-green">layers</i>
+            <div class="mdui-list-item-content">关于我们</div>
+          </a>
+          <a class="mdui-list-item mdui-ripple" href="../join">
+            <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue">forum</i>
+            <div class="mdui-list-item-content">加入我们</div>
+          </a>
+      </ul>
   </div>
-
+  
   <div class="mdui-container doc-container doc-no-cover">
     <h1 class="doc-title mdui-text-color-theme">Larvend·彼方</h1>
-    <hr>
+    <hr/>
+    <br/>
+    <div class="doc-intro mdui-typo">
+      <blockquote>
+        <p>有一种音乐，叫做国人纯音。</p>
+        <footer>——Minim Studio</footer>
+      </blockquote>
+      <div class="doc-intro-module">
+        <p>主打国人纯音的全屏式无判定线音游，愿你能沉浸于如梦似幻的钢琴声中。</p>
+        <p>这是一个书写了温柔与记忆的故事，请与她们，继续走下去吧。</p>
+      </div>
+    </div>
     <div class="doc-chapter">
       <div class="mdui-typo">
-        <blockquote>有一种音乐，叫做国人纯音。
-        <footer>——Minim Studio</footer></blockquote>
-
-主打国人纯音的全屏式无判定线音游，愿你能沉浸于如梦似幻的钢琴声中。
-
-这是一个书写了温柔与记忆的故事，请与她们，继续走下去吧。
-
-        <h2 class="doc-title">调查纲要</h2>
-「弃下所有，让我进入你的梦里。竭尽全力，拯救女孩沉默的内心。」
-
-因为一场意外，时天绫的姐姐时阙变成了植物人。在经过救治后，医生告诉时天绫小姐，她的姐姐随时都可以唤醒。但由于时阙小姐从未做过记忆备份，所以仅剩的记忆是混乱而残缺的。
-
-而唤醒后，时阙小姐的记忆到底是什么样的，她还能不能记得自己面前的妹妹……这一切都不得而知。
-
-“当时我真的很害怕，毕竟那时候，我只是个十三岁的孩子。我不知道自己的选择是否是正确的，我怕我无法承受选择错误的结果……”
-
-根据采访者与笔者事后的交流，采访者表示，在采访时天绫小姐的时候，她一直含着笑，就好像经历这件事情的人不是她。但唯独说到此处的时候，时天绫小姐的声音微微有些颤抖。
-
-“那您的选择是？”
-
-“我趁着医生离开的时候，把自己的意识接入了姐姐的神经网络。”
-
-看到这里的时候，笔者不由得倒抽一口冷气。我们都明白，对于当时只有13岁的时天绫小姐来说，她显然从未有过修复记忆的经验。如此莽撞的行为极有可能造成两人的意识都陷入永寂。这样情绪化的选择，尽管可以用年纪尚轻来解释，但考虑到其出发点，笔者认为有必要将这一点在最终的报告中着重体现。
-
-同样，我相信采访者当时在听到这番话时的震惊不在我之下，因为他在此处的笔记旁加了三个感叹号。
-
-“冒昧问一下，您必然知道如此选择的结果。那是什么样的心理促使您做出了这个选择呢？”
-
-“要说心理的话……大概就只是纯粹想让姐姐醒来，并且还记得我吧。”时天绫小姐思考了一下，给出了一个意料之中的答案。
-
-“那么想来您是成功了。”
-
-“哈哈哈那肯定的，不然你就采访不到我了。”时天绫小姐的开朗性子在她笑的时候一览无余，她从不拿手挡着嘴笑。
-
-“嗯。那么，您在您姐姐的记忆世界中待了多久？”
-
-“据医生说是三个月，虽然我觉得我在里面只待了七天。那时候一心都想着找回姐姐的记忆了，时间的流逝都感觉不到了呢。”
-
-“明白了，那么接下来的几天里，我会按照之前的约定每天前来拜访，以此来了解您在时阙小姐的记忆世界里发生的点点滴滴。非常感谢您的配合。”
-
-“不必客气，我会尽我所能地帮助你们。另外，在光语里，‘记忆世界’有特定的名字，我们经修改后仍在沿用，名为‘忆境’。”
-
-“感谢您的提醒，这对我们的研究来说非常重要，您知道‘忆境’的光语源拼写吗？”
-
-“这我就不清楚了，毕竟我并不研究光语。而且这个修改早在几百年前就出现了，只是因为二十年前记忆连接开始出现，这个词才重新被启用。”
-
-其后的内容不再有关主题，也许是因为当天的采访已经完成，故不在此列出。
-
-之后的采访档案为机密文件，暂不能公布，还望谅解。
+        <h2 class="doc-title doc-chapter-title-first mdui-text-color-theme">调查纲要</h2>
+        <p>「弃下所有，让我进入你的梦里。竭尽全力，拯救女孩沉默的内心。」</p>
+        <p>因为一场意外，时天绫的姐姐时阙变成了植物人。在经过救治后，医生告诉时天绫小姐，她的姐姐随时都可以唤醒。但由于时阙小姐从未做过记忆备份，所以仅剩的记忆是混乱而残缺的。</p>
+        <p>而唤醒后，时阙小姐的记忆到底是什么样的，她还能不能记得自己面前的妹妹……这一切都不得而知。</p>
+        <p>“当时我真的很害怕，毕竟那时候，我只是个十三岁的孩子。我不知道自己的选择是否是正确的，我怕我无法承受选择错误的结果……”</p>
+        <p>根据采访者与笔者事后的交流，采访者表示，在采访时天绫小姐的时候，她一直含着笑，就好像经历这件事情的人不是她。但唯独说到此处的时候，时天绫小姐的声音微微有些颤抖。</p>
+        <p>“那您的选择是？”</p>
+        <p>“我趁着医生离开的时候，把自己的意识接入了姐姐的神经网络。”</p>
+        <p>看到这里的时候，笔者不由得倒抽一口冷气。我们都明白，对于当时只有13岁的时天绫小姐来说，她显然从未有过修复记忆的经验。如此莽撞的行为极有可能造成两人的意识都陷入永寂。这样情绪化的选择，尽管可以用年纪尚轻来解释，但考虑到其出发点，笔者认为有必要将这一点在最终的报告中着重体现。</p>
+        <p>同样，我相信采访者当时在听到这番话时的震惊不在我之下，因为他在此处的笔记旁加了三个感叹号。</p>
+        <p>“冒昧问一下，您必然知道如此选择的结果。那是什么样的心理促使您做出了这个选择呢？”</p>
+        <p>“要说心理的话……大概就只是纯粹想让姐姐醒来，并且还记得我吧。”时天绫小姐思考了一下，给出了一个意料之中的答案。</p>
+        <p>“那么想来您是成功了。”</p>
+        <p>“哈哈哈那肯定的，不然你就采访不到我了。”时天绫小姐的开朗性子在她笑的时候一览无余，她从不拿手挡着嘴笑。</p>
+        <p>“嗯。那么，您在您姐姐的记忆世界中待了多久？”</p>
+        <p>“据医生说是三个月，虽然我觉得我在里面只待了七天。那时候一心都想着找回姐姐的记忆了，时间的流逝都感觉不到了呢。”</p>
+        <p>“明白了，那么接下来的几天里，我会按照之前的约定每天前来拜访，以此来了解您在时阙小姐的记忆世界里发生的点点滴滴。非常感谢您的配合。”</p>
+        <p>“不必客气，我会尽我所能地帮助你们。另外，在光语里，‘记忆世界’有特定的名字，我们经修改后仍在沿用，名为‘忆境’。”</p>
+        <p>“感谢您的提醒，这对我们的研究来说非常重要，您知道‘忆境’的光语源拼写吗？”</p>
+        <p>“这我就不清楚了，毕竟我并不研究光语。而且这个修改早在几百年前就出现了，只是因为二十年前记忆连接开始出现，这个词才重新被启用。”</p>
+        <p>其后的内容不再有关主题，也许是因为当天的采访已经完成，故不在此列出。</p>
+        <p>之后的采访档案为机密文件，暂不能公布，还望谅解。</p>
       </div>
     </div>
   </div>
   <div class="doc-footer-nav mdui-color-theme">
-    <div class="mdui-container">
-      <div class="footer-copyright">Copyright © 2019 - 2020  Larvend Ahympia. Theme by MDUI.</div>
+  <div class="mdui-container">
+    <div class="doc-footer-nav-text">
+          <span class="doc-footer-nav-direction">Theme by MDUI.</span>
+          <div class="doc-footer-nav-chapter">Copyright © 2019 - 2020  Larvend Ahympia.</div>
     </div>
   </div>
-</body>
+</div>
 
-<script>
-  window.G_API = '/api';
-  window.G_ROOT = '';
-  window.G_USER = false;
-</script>
 <script src="../../js/mdui.min.js"></script>
-<script src="../../js/vendor.js"></script>
-<script src="../../js/app.js"></script>
+<script src="../../js/smooth-scroll.min.js"></script>
+<script>var scroll = new SmoothScroll("a[href*='#']");</script>
+
+</body>
