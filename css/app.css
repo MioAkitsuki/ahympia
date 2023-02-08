@@ -1,59 +1,65 @@
 footer{
-    opacity: 0.9;
-    background-color: var(--bs-body-bg);
-    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(255 255 255 / 15%);
-  }
+  opacity: 0.9;
+  background-color: var(--bs-body-bg);
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(255 255 255 / 15%);
+}
 
-  .top-navbar{
-    background-color: white;
-    opacity: 1;
-    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(255 255 255 / 15%);
-  }
+.top-navbar{
+  background-color: white;
+  opacity: 1;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(255 255 255 / 15%);
+}
 
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
+.dropdown .dropdown-menu{
+  display: block;
+  opacity: 0;
+  transition: 0.2s;
+}
 
-  .navbar-btn{
-    border: none;
-  }
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+}
 
-  .navbar-btn:focus{
-    border: none;
-  }
+.navbar-btn{
+  border: none;
+}
 
-  .main-section{
-    min-height: 240px;
-  }
+.navbar-btn:focus{
+  border: none;
+}
 
-  .main-section h1{
-    line-height: 1;
-    color: black;
-  }
+.main-section{
+  min-height: 240px;
+}
 
-  .main-section p{
-    color: var(--bs-body-color);
-  }
+.main-section h1{
+  line-height: 1;
+  color: black;
+}
 
-  .footer-list{
-    padding-left: 0;
-    list-style: none;
-  }
+.main-section p{
+  color: var(--bs-body-color);
+}
 
-  .footer-list li{
-    color: var(--bs-secondary-color);
-  }
+.footer-list{
+  padding-left: 0;
+  list-style: none;
+}
 
-  .footer-list a{
-    text-decoration-line: none;
-    color: var(--bs-secondary-color);
-  }
+.footer-list li{
+  color: var(--bs-secondary-color);
+}
 
-  .footer-list a:hover{
-    color: var(--bs-body-color)
-  }
+.footer-list a{
+  text-decoration-line: none;
+  color: var(--bs-secondary-color);
+}
 
-  .footer-copyright{
-    text-align: center;
-    color: var(--bs-secondary-color)
-  }
+.footer-list a:hover{
+  color: var(--bs-body-color)
+}
+
+.footer-copyright{
+  text-align: center;
+  color: var(--bs-secondary-color)
+}
