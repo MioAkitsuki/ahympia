@@ -1,0 +1,59 @@
+body {
+  background: no-repeat url(../img/bg.webp);
+  background-color: var(--bs-body-bg);
+  background-position: 50%;
+  background-size: cover;
+  backdrop-filter: blur(5px);
+
+  font-family: "Noto Serif SC";
+  font-weight: 400;
+}
+
+.hide {
+  display: none;
+}
+
+.main-section h1 {
+  color: #000;
+  line-height: 1;
+}
+
+.main-section p {
+  color: var(--bs-body-color);
+}
+
+.doc a {
+  text-decoration-line: none;
+}
+
+footer {
+  background-color: var(--bs-body-bg);
+  box-shadow: 0 .5rem 1rem rgb(0 0 0/15%),inset 0 -1px 0 rgb(255 255 255/15%);
+  opacity: .9;
+}
+
+.footer-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-list a,.footer-list li {
+  color: var(--bs-secondary-color);
+}
+
+.footer-list a {
+  text-decoration-line: none;
+}
+
+.footer-list a:hover {
+  color: var(--bs-body-color);
+}
+
+.footer-copyright {
+  color: var(--bs-secondary-color);
+  text-align: center;
+}
+
+.nav-item {
+  cursor: pointer;
+}
